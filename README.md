@@ -1,8 +1,20 @@
-These are my config files.
+FullStack Analytics dotfiles.
 
-Please use them, but ymmv.
+## Setup Secrets
 
-If you clone the repo, please note:
+```
+$ touch ~/.secrets
+$ echo "export GIT_NAME=$your_name" >> ~/.secrets
+$ echo "export GIT_EMAIL=$your_email" >> ~/.secrets
+$ echo "export GIT_USERNAME=$your_username >> ~/.secrets
+```
 
-- You can clone the repo and the Vundle submodule by running git clone with the recursive flag like so: ```$ git clone --recursive $this_repo_url```
-- Please change the name and email in [.gitconfig](.gitconfig)
+## Clone and Symlink Dotfiles
+
+```
+mkdir -p ~/development && cd ~/development && \
+  git clone --recursive $this_repo_url && \
+  cd dotfiles && chmod +x bootstrap.sh && \
+  ./bootstrap.sh   
+```
+

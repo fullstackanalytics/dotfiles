@@ -1,6 +1,6 @@
 [user]
-	name = Nick Amabile
-    email = amabile.n@gmail.com
+	name = $GIT_NAME 
+    email = $GIT_EMAIL 
 	credentials = cache
 
 [branch]
@@ -48,6 +48,6 @@
 
 [credential]
 	helper = cache --timeout=43200
-    user=namabile
+    user=$GIT_USERNAME
 [branch "*branch-name*"]
 	rebase = true
