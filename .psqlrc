@@ -1,1 +1,7 @@
-/Users/julieweldon/.psqlrc
+\timing
+\pset pager always
+\setenv LESS '-iMSx4 -FXR -e'
+\set PROMPT1 '%[%033[33;1m%]%x%[%033[0m%]%[%033[1m%]%/%[%033[0m%]%R%# '
+\setenv EDITOR 'vim --servername PSQL --remote-tab-wait'
+\pset linestyle unicode
+\pset border 2
